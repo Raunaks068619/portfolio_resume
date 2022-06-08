@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/resume_portfolio/static/css/main.98d2f2d9.css",
-    "main.js": "/resume_portfolio/static/js/main.322acaf7.js",
-    "static/js/787.9f4b161c.chunk.js": "/resume_portfolio/static/js/787.9f4b161c.chunk.js",
-    "static/media/poppins-all-400-normal.woff": "/resume_portfolio/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
-    "static/media/poppins-devanagari-400-normal.woff2": "/resume_portfolio/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
-    "static/media/image.png": "/resume_portfolio/static/media/image.bc030009330012b23411.png",
-    "static/media/poppins-latin-400-normal.woff2": "/resume_portfolio/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
-    "static/media/poppins-latin-ext-400-normal.woff2": "/resume_portfolio/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
-    "index.html": "/resume_portfolio/index.html",
-    "main.98d2f2d9.css.map": "/resume_portfolio/static/css/main.98d2f2d9.css.map",
-    "main.322acaf7.js.map": "/resume_portfolio/static/js/main.322acaf7.js.map",
-    "787.9f4b161c.chunk.js.map": "/resume_portfolio/static/js/787.9f4b161c.chunk.js.map"
+    "main.css": "/project_practice/static/css/main.6bb2b070.css",
+    "main.js": "/project_practice/static/js/main.43309681.js",
+    "static/js/787.9f4b161c.chunk.js": "/project_practice/static/js/787.9f4b161c.chunk.js",
+    "static/media/poppins-all-400-normal.woff": "/project_practice/static/media/poppins-all-400-normal.6fbfdac99c274b77fe96.woff",
+    "static/media/poppins-devanagari-400-normal.woff2": "/project_practice/static/media/poppins-devanagari-400-normal.64d5f06ee726edd58ca3.woff2",
+    "static/media/image.png": "/project_practice/static/media/image.bc030009330012b23411.png",
+    "static/media/poppins-latin-400-normal.woff2": "/project_practice/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/project_practice/static/media/poppins-latin-ext-400-normal.4f38b4331448d2313adc.woff2",
+    "index.html": "/project_practice/index.html",
+    "main.6bb2b070.css.map": "/project_practice/static/css/main.6bb2b070.css.map",
+    "main.43309681.js.map": "/project_practice/static/js/main.43309681.js.map",
+    "787.9f4b161c.chunk.js.map": "/project_practice/static/js/787.9f4b161c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d2f2d9.css",
-    "static/js/main.322acaf7.js"
+    "static/css/main.6bb2b070.css",
+    "static/js/main.43309681.js"
   ]
 }
