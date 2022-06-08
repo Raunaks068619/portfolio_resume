@@ -34,7 +34,7 @@ function Card({ imageLink }: { imageLink: any }) {
   return (
     <>
       <MotionBox
-        cursor={"pointer"}
+        // cursor={"pointer"}
         //onClick={}
         rounded="3xl"
         w={{ md: "xl", base: "full" }}
