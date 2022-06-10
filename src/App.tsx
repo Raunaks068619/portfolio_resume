@@ -139,10 +139,10 @@ export default function App() {
                     top={55}
                     color={"blue"}
                     width={"sm"}
-                   rounded={"full"}
+                    rounded={"full"}
                     verticalAlign={"center"}
                     position={"relative"}
-                    src="https://media-exp1.licdn.com/dms/image/C4E03AQF7yBvK2__dMw/profile-displayphoto-shrink_800_800/0/1648180138251?e=1660176000&v=beta&t=QrddHDaiqsMTqLRn3zzAHN1jr6DsYx0LHaFcA8fjLfM"
+                    src=""
                   ></Image>
                 </HStack>
               </Container>
