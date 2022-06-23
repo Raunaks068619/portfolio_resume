@@ -38,13 +38,13 @@ export default function Nav({ counterIndex }: { counterIndex: any }) {
         px={{ base: 4 }}
         align={"center"}
       >
-        <Flex
+        {/* <Flex
           justifyContent={"center"}
           flex={{ md: 1 }}
           ml={{ base: -2 }}
           display={{ base: "flex", md: "none" }}
-        >
-          <IconButton
+        > */}
+          {/* <IconButton
             onClick={onToggle}
             rounded={"full"}
             border="1px"
@@ -54,20 +54,22 @@ export default function Nav({ counterIndex }: { counterIndex: any }) {
             }
             variant={"ghost"}
             aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
+          /> */}
+        {/* </Flex> */}
+        <Flex flex={{ base: 1 }} justify={{ base: "start", md: "start" }}>
+          {/* <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
-          >
-            <Image
-              src={require("./assets/image.png")}
-              maxW={"100px"}
-              // width={"100%"}
-            />
-          </Text>
+          > */}
+          <Image
+            src={
+              "https://github.com/Raunaks068619/portfolio_resume/blob/master/src/assets/loogo.png?raw=true"
+            }
+            maxW={"100px" }
+            // width={"100%"}
+          />
+          {/* </Text> */}
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -80,35 +82,41 @@ export default function Nav({ counterIndex }: { counterIndex: any }) {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={"semibold"}
-            variant={"link"}
-            href={"#"}
-            textColor={"gray.400"}
-          >
-            Sign In
-          </Button>
-          <Button
-            fontSize={"sm"}
-            fontWeight={"semibold"}
-            color={"black"}
-            bgColor={"white"}
-            _hover={{
-              bgColor: "gray.50",
-            }}
-            rounded={"xl"}
-          >
-            Sign up
-          </Button>
+          <a href="https://www.linkedin.com/in/raunak-singh-608051218/">
+            <Button
+              fontSize={"sm"}
+              fontWeight={"semibold"}
+              color={"black"}
+              bgColor={"white"}
+              _hover={{
+                bgColor: "gray.50",
+              }}
+              rounded={"xl"}
+              textColor={"blue"}
+            >
+              Linkedin
+            </Button>
+          </a>
+          <a href="https://github.com/Raunaks068619/">
+            <Button
+              fontSize={"sm"}
+              fontWeight={"semibold"}
+              color={"black"}
+              bgColor={"white"}
+              _hover={{
+                bgColor: "gray.50",
+              }}
+              rounded={"xl"}
+            >
+              Github
+            </Button>
+          </a>
         </Stack>
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
+      {/* <Collapse in={isOpen} animateOpacity>
+       <MobileNav /> 
+      </Collapse> */}
     </Box>
   );
 }
@@ -119,11 +127,11 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
+    <Stack direction={"row"} spacing={0}>
+      {/* {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
-          <Popover trigger={"hover"} placement={"bottom-start"}>
-            <PopoverTrigger>
+          <Popover trigger={"hover"} placement={"bottom-start"}> */}
+      {/* <PopoverTrigger>
               <Link
                 _focus={{ boxShadow: "none" }}
                 p={2}
@@ -138,9 +146,9 @@ const DesktopNav = () => {
               >
                 {navItem.label}
               </Link>
-            </PopoverTrigger>
+            </PopoverTrigger> */}
 
-            {navItem.children && (
+      {/* {navItem.children && (
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
@@ -155,56 +163,56 @@ const DesktopNav = () => {
                   ))}
                 </Stack>
               </PopoverContent>
-            )}
-          </Popover>
+            )} */}
+      {/* </Popover>
         </Box>
-      ))}
+      ))} */}
     </Stack>
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-  return (
-    <Link
-      href={href}
-      role={"group"}
-      display={"block"}
-      p={2}
-      rounded={"md"}
-      bgColor={"gray.50"}
-      _hover={{
-        bg: useColorModeValue("white", "gray.900"),
-      }}
-    >
-      <Stack direction={"row"} align={"center"}>
-        <Box>
-          <Text
-            transition={"all .3s ease"}
-            textColor={"black"}
-            // _groupHover={{ color: "pink.400" }}
-            fontWeight={500}
-          >
-            {label}
-          </Text>
-          <Text textColor={"gray.500"} fontSize={"sm"}>
-            {subLabel}
-          </Text>
-        </Box>
-        <Flex
-          transition={"all .3s ease"}
-          transform={"translateX(-10px)"}
-          opacity={0}
-          _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-          justify={"flex-end"}
-          align={"center"}
-          flex={1}
-        >
-          <Icon color={"black"} w={5} h={5} as={ChevronRightIcon} />
-        </Flex>
-      </Stack>
-    </Link>
-  );
-};
+// const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+//   return (
+//     <Link
+//       href={href}
+//       role={"group"}
+//       display={"block"}
+//       p={2}
+//       rounded={"md"}
+//       bgColor={"gray.50"}
+//       _hover={{
+//         bg: useColorModeValue("white", "gray.900"),
+//       }}
+//     >
+//       <Stack direction={"row"} align={"center"}>
+//         <Box>
+//           <Text
+//             transition={"all .3s ease"}
+//             textColor={"black"}
+//             // _groupHover={{ color: "pink.400" }}
+//             fontWeight={500}
+//           >
+//             {label}
+//           </Text>
+//           <Text textColor={"gray.500"} fontSize={"sm"}>
+//             {subLabel}
+//           </Text>
+//         </Box>
+//         <Flex
+//           transition={"all .3s ease"}
+//           transform={"translateX(-10px)"}
+//           opacity={0}
+//           _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
+//           justify={"flex-end"}
+//           align={"center"}
+//           flex={1}
+//         >
+//           <Icon color={"black"} w={5} h={5} as={ChevronRightIcon} />
+//         </Flex>
+//       </Stack>
+//     </Link>
+//   );
+// };
 
 const MobileNav = () => {
   return (
@@ -224,45 +232,46 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
-        py={2}
-        as={Link}
-        href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          fontWeight={"semibold"}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
-      </Flex>
+    <div></div>
+    // <Stack spacing={4} onClick={children && onToggle}>
+    //   <Flex
+    //     py={2}
+    //     as={Link}
+    //     href={href ?? "#"}
+    //     justify={"space-between"}
+    //     align={"center"}
+    //     _hover={{
+    //       textDecoration: "none",
+    //     }}
+    //   >
+    //     <Text
+    //       fontWeight={"semibold"}
+    //       color={useColorModeValue("gray.600", "gray.200")}
+    //     >
+    //       {label}
+    //     </Text>
+    //     {children && (
+    //       <Icon
+    //         as={ChevronDownIcon}
+    //         transition={"all .25s ease-in-out"}
+    //         transform={isOpen ? "rotate(180deg)" : ""}
+    //         w={6}
+    //         h={6}
+    //       />
+    //     )}
+    //   </Flex>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack mt={2} pl={4} align={"start"}>
-          {children &&
-            children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
-    </Stack>
+    //   <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+    //     <Stack mt={2} pl={4} align={"start"}>
+    //       {children &&
+    //         children.map((child) => (
+    //           <Link key={child.label} py={2} href={child.href}>
+    //             {child.label}
+    //           </Link>
+    //         ))}
+    //     </Stack>
+    //   </Collapse>
+    // </Stack>
   );
 };
 

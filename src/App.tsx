@@ -43,17 +43,21 @@ export default function App() {
   function changeIndex() {
     index < 3 ? setIndex(index + 1) : setIndex(0);
   }
+  // function downloadFile() {
+  //   window.location.href =
+  //     "https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf";
+  // }
   const [isLargerThan400] = useMediaQuery("(min-width: 400px)");
   return (
     <>
       <Box bgColor={"black"}>
         <Box mb={14} bgColor={"black"}>
-          <Flex onMouseEnter={() => setCounter(false)} bgColor={"transparent"}>
+          <Flex onMouseEnter={() => setCounter(false)} bgColor={"black"}>
             <Container
               px={{ md: 0, base: 0 }}
               id="top"
               maxW={"7xl"}
-              bgColor={"black"}
+              bgColor={"transparent"}
             >
               <Box
                 zIndex={10}
@@ -81,6 +85,7 @@ export default function App() {
                     <Heading
                       fontWeight={"semibold"}
                       textColor="white"
+                      mt={{ base: "10%", md:"0px" }}
                       fontSize={{ base: "5xl", sm: "5xl", md: "7xl" }}
                       // lineHeight={"110%"}
                     >
@@ -91,12 +96,12 @@ export default function App() {
                       <Text
                         fontWeight={"semibold"}
                         opacity={0.5}
-                        fontSize={{ base: "5xl", sm: "5xl", md: "7xl" }}
+                        fontSize={{ base: "3xl", sm: "3xl", md: "7xl" }}
                       >
                         Designer {"&"} <br></br> Front-end Developer
                       </Text>
                     </Heading>
-                    <Grid
+                    {/* <Grid
                       width="30%"
                       templateColumns={{
                         md: "repeat(2, 1fr)",
@@ -104,35 +109,41 @@ export default function App() {
                       }}
                       gap={{ md: 0, base: 2 }}
                     >
+                      <GridItem> */}
+                    <a href="https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf">
+                      <Button
+                        variant={"solid"}
+                        // maxW={"180px"}
+                        fontWeight={"semibold"}
+                        fontSize={{ md: "lg", base: "md" }}
+                        py={{ md: 7, base: 6 }}
+                        // px={"/"}
+                        bgColor={"white"}
+                        rounded={"2xl"}
+                      >
+                        Download Resume
+                      </Button>
+                    </a>
+                    {/* </GridItem>
                       <GridItem>
-                        <Button
-                          variant={"solid"}
-                          maxW={"150px"}
-                          fontWeight={"semibold"}
-                          fontSize={{ md: "lg", base: "md" }}
-                          py={{ md: 7, base: 6 }}
-                          bgColor={"white"}
-                          rounded={"2xl"}
-                        >
-                          View all work
-                        </Button>
+                        <a href="https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf">
+                          <Button
+                            variant={"solid"}
+                            maxW={"150px"}
+                            fontWeight={"semibold"}
+                            fontSize={{ md: "lg", base: "md" }}
+                            py={{ md: 7, base: 6 }}
+                            bg={"black"}
+                            rounded={"2xl"}
+                            color={"white"}
+                            _hover={{ bg: "white", color: "black" }}
+                            // ref="https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf"
+                          >
+                            Resume
+                          </Button>
+                        </a>
                       </GridItem>
-                      <GridItem>
-                        <Button
-                          variant={"solid"}
-                          maxW={"150px"}
-                          fontWeight={"semibold"}
-                          fontSize={{ md: "lg", base: "md" }}
-                          py={{ md: 7, base: 6 }}
-                          bg={"black"}
-                          rounded={"2xl"}
-                          color={"white"}
-                          _hover={{ bg: "white", color: "black" }}
-                        >
-                          Resume
-                        </Button>
-                      </GridItem>
-                    </Grid>
+                    </Grid> */}
                   </Stack>
                   <Image
                     hidden={isLargerThan400 ? false : true}
@@ -142,7 +153,7 @@ export default function App() {
                     rounded={"full"}
                     verticalAlign={"center"}
                     position={"relative"}
-                    src=""
+                    src="https://raw.githubusercontent.com/Raunaks068619/portfolio_resume/master/src/raunak.jpeg"
                   ></Image>
                 </HStack>
               </Container>
@@ -216,7 +227,7 @@ export default function App() {
                         {tabIndex == 0 ? (
                           <Grid
                             templateColumns={{
-                              md: "repeat(2, 1fr)",
+                              md: "repeat(4, 1fr)",
                               base: "repeat(2, 1fr)",
                             }}
                             gap={{ md: 10, base: 2 }}
