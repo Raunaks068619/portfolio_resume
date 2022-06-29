@@ -47,7 +47,7 @@ export default function App() {
   //   window.location.href =
   //     "https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf";
   // }
-  const [isLargerThan400] = useMediaQuery("(min-width: 400px)");
+  const [isLargerThan600] = useMediaQuery("(min-width: 600px)");
   return (
     <>
       <Box bgColor={"black"}>
@@ -58,6 +58,7 @@ export default function App() {
               id="top"
               maxW={"7xl"}
               bgColor={"transparent"}
+              // h={"xl"}
             >
               <Box
                 zIndex={10}
@@ -82,6 +83,12 @@ export default function App() {
                     spacing={{ base: 8, md: 14 }}
                     pt={{ base: 20, md: "12%" }}
                   >
+                    <Image
+                    hidden={isLargerThan600 ? true : false}
+                    width={"150px"}
+                    rounded={"full"}
+                    src="https://raw.githubusercontent.com/Raunaks068619/portfolio_resume/master/src/raunak.jpeg"
+                  ></Image>
                     <Heading
                       fontWeight={"semibold"}
                       textColor="white"
@@ -124,29 +131,10 @@ export default function App() {
                         Download Resume
                       </Button>
                     </a>
-                    {/* </GridItem>
-                      <GridItem>
-                        <a href="https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf">
-                          <Button
-                            variant={"solid"}
-                            maxW={"150px"}
-                            fontWeight={"semibold"}
-                            fontSize={{ md: "lg", base: "md" }}
-                            py={{ md: 7, base: 6 }}
-                            bg={"black"}
-                            rounded={"2xl"}
-                            color={"white"}
-                            _hover={{ bg: "white", color: "black" }}
-                            // ref="https://github.com/Raunaks068619/portfolio_resume/raw/master/src/assets/Raunak%20singh%20(Resume)(1).pdf"
-                          >
-                            Resume
-                          </Button>
-                        </a>
-                      </GridItem>
-                    </Grid> */}
+                   
                   </Stack>
                   <Image
-                    hidden={isLargerThan400 ? false : true}
+                    hidden={isLargerThan600 ? false : true}
                     top={55}
                     color={"blue"}
                     width={"sm"}
