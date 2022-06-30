@@ -83,12 +83,12 @@ export default function App() {
                     spacing={{ base: 8, md: 14 }}
                     pt={{ base: 20, md: "12%" }}
                   >
-                    <Image
+                    {/* <Image
                     hidden={isLargerThan600 ? true : false}
                     width={"150px"}
                     rounded={"full"}
                     src="https://raw.githubusercontent.com/Raunaks068619/portfolio_resume/master/src/raunak.jpeg"
-                  ></Image>
+                  ></Image> */}
                     <Heading
                       fontWeight={"semibold"}
                       textColor="white"
